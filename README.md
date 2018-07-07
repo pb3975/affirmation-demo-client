@@ -29,21 +29,5 @@ npm run build:prod
 ```
 npm test
 ```
-#### Deployment Options:
 
-To deploy to the web, insert an AWS S3 bucket resource name in package.json:
-
-```
- "deploy": "aws s3 sync public/ s3://[YOUR_S3_RESOURCE_NAME] --delete"
-
-```
-Configure your aws command line instance:
-
-```
-aws configure
-```
-You can now push updates straight to the web with:
-```
-npm run deploy
-```
  
