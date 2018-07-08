@@ -11,7 +11,7 @@
     "start": "webpack -p && node server/server.js",
     "test": "jest",
     "predeploy": "npm run build:prod",
-    "deploy": "aws s3 sync public/ s3://affirmation-demo-client-staging --delete"
+    "deploy": "aws s3 sync public/ s3://affirmation-demo-client-production --delete"
   },
   "dependencies": {
     "dotenv": "^6.0.0",

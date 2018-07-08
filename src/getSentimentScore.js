@@ -1,5 +1,3 @@
-// import sentiment from 'sentiment';
-// sentiment = new Sentiment();
 var Sentiment = require('sentiment');
 var sentiment = new Sentiment();
 

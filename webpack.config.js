@@ -19,9 +19,6 @@ module.exports = {
         contentBase: path.join(__dirname, 'public'),
         port: 21337
     },
-    node: {
-        fs: 'empty'
-    },
     plugins: [
         new Dotenv()
     ]

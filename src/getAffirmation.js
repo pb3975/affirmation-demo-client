@@ -5,17 +5,15 @@ const getAffirmation = () => {
   const uri = `${baseUrl}/affirmations`;
   return new Promise((resolve, reject) => {
     fetch(uri)
-    .then(response => {
+    .then((response) => {
       if (response.ok) {
         response = response.json()
         .then(data => {
           console.log
-          var rand = [Math.floor(Math.random()*data.length)];
+          const rand = [Math.floor(Math.random()*data.length)];
           resolve(data[rand].text);
         })
-
       } else {
-        alert('There was an error with your request. Please try again');
         reject(`Request rejected with status ${response.status}`);
       }
     })
