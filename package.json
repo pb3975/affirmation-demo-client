@@ -10,8 +10,7 @@
     "dev-server": "webpack-dev-server --mode development",
     "start": "webpack -p && node server/server.js",
     "test": "jest",
-    "predeploy": "npm run build:prod",
-    "deploy": "aws s3 sync public/ s3://affirmation-demo-client-production --delete"
+    "predeploy": "npm run build:prod"
   },
   "dependencies": {
     "dotenv": "^6.0.0",
