@@ -3,7 +3,7 @@ import getSentimentScore from '../src/getSentimentScore'
 
 describe('getSentimentScore function', () => {
   test('should return false when given a negative statement', () => {
-    const text = 'You suck!';
+    const text = 'You\'re lame!';
     var result = getSentimentScore(text);
     expect(result).toEqual(false);
   })
